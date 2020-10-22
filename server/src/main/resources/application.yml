@@ -1,0 +1,51 @@
+
+server:
+    port: 9909
+    tomcat:
+      uri-encoding: UTF-8
+
+spring: 
+  application:
+    name: docx
+  data:
+    mongodb:
+      uri: ${mongodbUri}
+  datasource:
+    name: datasource
+    type: com.alibaba.druid.pool.DruidDataSource
+    minIdle: 1
+    maxActive: 2
+    initialSize: 1
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'BB' FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolSize: 20
+  session:
+    store-type: redis  
+  redis: 
+    host: ip
+    port: 6789
+    password:
+  
+  http: 
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+    multipart: 
+      max-fileSize: 20MB
+      max-requestSize: 20MB
+
+  resources:
+    static-locations: classpath:/static/, file:/data/docx4j/
+     
+mybatis-plus:
+  mapper-locations: 
+    - "classpath:mybatis/mapper/**/*.xml"
+logging:
+  level:
+    com.atide.framwork.clouddisk.repository: debug
+      
