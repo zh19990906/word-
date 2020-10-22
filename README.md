@@ -315,7 +315,7 @@ insert  into `cloud_file`(`ID`,`FILE_ID`,`JSON_ID`,`CSS_ID`,`FILE_NAME`,`CREATE_
 
 ```
 
-忘记放文件了，大家自行创建一个txt文档，然后复制进去，把后缀改成sql，然后导入即可。
+忘记放文件了，大家自行创建一个txt文档，然后复制进去，把后缀改成.sql，然后导入即可。
 
 此时我们便可以运行整个项目了！如果启动运行有错，大家可以留言错误，看到后会第一时间回复！
 
@@ -344,7 +344,7 @@ export {
 
 然后改完这个之后，需要进行一些文件的安装，
 
-首先是node.js的安装，官网地址：https://nodejs.org/en/download/（链接：https://pan.baidu.com/s/1Vstya-3fA6NZbyeHBLe5Ew 提取码：92gy 这里提供一个64位的安装包，32位的麻烦自行下载一下）。
+首先是node.js的安装，官网地址：https://nodejs.org/en/download/ （链接：https://pan.baidu.com/s/1Vstya-3fA6NZbyeHBLe5Ew 提取码：92gy 这里提供一个64位的安装包，32位链接：https://pan.baidu.com/s/1kU3sQ5PHo4-r1ldXpQoLAA 提取码：p8rg ）。
 
 我这里选的是.msi文件，这种比压缩包方便点，不用配置环境变量。
 
