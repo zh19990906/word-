@@ -25,7 +25,7 @@ MongoDB 提供了可用于 32 位和 64 位系统的预编译二进制包，你�
 
 > 注意：在 MongoDB 2.2 版本后已经不再支持 Windows XP 系统。最新版本也已经没有了 32 位系统的安装文件。
 
-![image-20201022085332227](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022085332227.png)
+![image-20201022085332227](README.assets/image-20201022085332227.png)
 
 - **MongoDB for Windows 64-bit** 适合 64 位的 Windows Server 2008 R2, Windows 7 , 及最新版本的 Window 系统。
 
@@ -41,15 +41,15 @@ MongoDB 提供了可用于 32 位和 64 位系统的预编译二进制包，你�
 
   
 
-  ![image-20201022085415145](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022085415145.png)
+  ![image-20201022085415145](README.assets/image-20201022085415145.png)
 
-  ![image-20201022085440579](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022085440579.png)
+  ![image-20201022085440579](README.assets/image-20201022085440579.png)
 
   下一步安装 **"install mongoDB compass"** 不勾选（当然你也可以选择安装它，可能需要更久的安装时间），MongoDB Compass 是一个图形界面管理工具，我们可以在后面自己到官网下载安装，下载地址：https://www.mongodb.com/download-center/compass。
 
   
 
-  ![image-20201022085526524](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022085526524.png)
+  ![image-20201022085526524](README.assets/image-20201022085526524.png)
 
   **创建数据目录**
 
@@ -233,17 +233,17 @@ use admin
 
 第一步在win10系统任务栏搜索框中输入命令，搜索到命令提示符之后，鼠标右键选择以管理员身份运行，如下图所示：
 
-![image-20201022090049766](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022090049766.png)
+![image-20201022090049766](README.assets/image-20201022090049766.png)
 
 第二步进去命令提示符之后，输入netstat -ano命令并按一个回车，如下图所示：
 
-![image-20201022090151713](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022090151713.png)
+![image-20201022090151713](README.assets/image-20201022090151713.png)
 
 因为我们知道具体的端口号，输入netstat -aon|findstr 8080 ，其中8080加英文双引号，按回车键就可以找到占用8080端口的PID，如下图所示：
 
-![image-20201022090302388](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022090302388.png)我的这个没有被占用
+![image-20201022090302388](README.assets/image-20201022090302388.png)我的这个没有被占用
 
-![image-20201022090347429](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022090347429.png)这个就被占用了。
+![image-20201022090347429](README.assets/image-20201022090347429.png)这个就被占用了。
 
 如果被占用了，此时我们就需要将这个被占用的关闭，以防我们在上面的端口被占用导致我们的项目不能运行！
 
@@ -251,11 +251,11 @@ use admin
 
 这里不做演示，借用别人图片一用：
 
-![image-20201022090621243](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022090621243.png)
+![image-20201022090621243](README.assets/image-20201022090621243.png)
 
 第六步找到进程的名字之后，我们打开任务管理器，点击详细信息，可以找到对应的进程，结束掉进程，端口就被释放了，如下图所示：
 
-![image-20201022090651512](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022090651512.png)
+![image-20201022090651512](README.assets/image-20201022090651512.png)
 
 目前服务器是准备的差不多了，然后就是代码部分了，首先要看我们文件的server文件夹里面的application.properits文件
 
@@ -327,7 +327,7 @@ insert  into `cloud_file`(`ID`,`FILE_ID`,`JSON_ID`,`CSS_ID`,`FILE_NAME`,`CREATE_
 
 我把前段代码也放入了整个项目里面，client便是前段的代码集合，按照如下路径找到相应得到文件：
 
-![image-20201022091559665](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022091559665.png)
+![image-20201022091559665](README.assets/image-20201022091559665.png)
 
 ```java
 import { stringify } from 'qs';
@@ -352,31 +352,31 @@ export {
 
 步骤 2 : 点击以上的Run(运行)，将出现如下界面：
 
-![install-node-msi-version-on-windows-step2](https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step2.png)
+![install-node-msi-version-on-windows-step2](README.assets/install-node-msi-version-on-windows-step2.png)
 
 步骤 3 : 勾选接受协议选项，点击 next（下一步） 按钮 :
 
-![install-node-msi-version-on-windows-step3](https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step3.png)
+![install-node-msi-version-on-windows-step3](README.assets/install-node-msi-version-on-windows-step3.png)
 
 步骤 4 : Node.js默认安装目录为 "C:\Program Files\nodejs\" , 你可以修改目录，并点击 next（下一步）：
 
-![install-node-msi-version-on-windows-step4](https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step4.png)
+![install-node-msi-version-on-windows-step4](README.assets/install-node-msi-version-on-windows-step4.png)
 
 步骤 5 : 点击树形图标来选择你需要的安装模式 , 然后点击下一步 next（下一步）
 
-![install-node-msi-version-on-windows-step5](https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step5.png)
+![install-node-msi-version-on-windows-step5](README.assets/install-node-msi-version-on-windows-step5.png)
 
 步骤 6 :点击 Install（安装） 开始安装Node.js。你也可以点击 Back（返回）来修改先前的配置。 然后并点击 next（下一步）：
 
-![install-node-msi-version-on-windows-step6](https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step6.png)
+![install-node-msi-version-on-windows-step6](README.assets/install-node-msi-version-on-windows-step6.png)
 
 安装过程：
 
-![install-node-msi-version-on-windows-step7](https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step7.png)
+![install-node-msi-version-on-windows-step7](README.assets/install-node-msi-version-on-windows-step7.png)
 
 点击 Finish（完成）按钮退出安装向导。
 
-![install-node-msi-version-on-windows-step8](https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step8.png)
+![install-node-msi-version-on-windows-step8](README.assets/install-node-msi-version-on-windows-step8.png)
 
 检测PATH环境变量是否配置了Node.js，点击开始=》运行=》输入"cmd" => 输入命令"path"，输出如下结果：
 
@@ -392,7 +392,7 @@ C:\Users\rg\AppData\Roaming\npm
 
 检查Node.js版本
 
-![node-version-test](https://www.runoob.com/wp-content/uploads/2014/03/node-version-test.png)
+![node-version-test](README.assets/node-version-test.png)
 
 下面是npm的安装教程，来自菜鸟教程的哟：（原网址：https://www.runoob.com/nodejs/nodejs-npm.html）
 
@@ -916,31 +916,31 @@ E:\360MoveData\Users\10938\Desktop\server\server\client 路径找到client为止
 
 移动盘：
 
-![image-20201022093314070](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022093314070.png)
+![image-20201022093314070](README.assets/image-20201022093314070.png)
 
 移动到工作目录：
 
-![image-20201022093337225](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022093337225.png)
+![image-20201022093337225](README.assets/image-20201022093337225.png)
 
 使用npm启动项目：
 
-![image-20201022093359561](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022093359561.png)
+![image-20201022093359561](README.assets/image-20201022093359561.png)
 
 第一次启动会慢点，等待即可，启动好以后，会使用默认浏览器打开：
 
-![image-20201022093659371](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022093659371.png)
+![image-20201022093659371](README.assets/image-20201022093659371.png)
 
 此时还不能运行，需要大家在E盘创建一个文件夹，用来存放临时文件，路径如下：E:\test
 
 里面有两个文件：document.docx和document.docx.html
 
-![image-20201022093746683](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022093746683.png)
+![image-20201022093746683](README.assets/image-20201022093746683.png)
 
 如果你没有E盘怎么版，如果有文件重复怎么办等，这个好办，方法如下：
 
 修改文件路径即可，也就是修改如图的文件：
 
-![image-20201022093957576](C:\Users\10938\AppData\Roaming\Typora\typora-user-images\image-20201022093957576.png)
+![image-20201022093957576](README.assets/image-20201022093957576.png)
 
 
 
